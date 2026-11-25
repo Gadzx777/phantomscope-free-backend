@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: phantomscope-free-backend
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: PLACE_IDS
+        value: 8737602449,8916037983,12069083555
+      - key: POLL_MS
+        value: "30000"

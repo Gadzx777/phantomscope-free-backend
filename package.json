@@ -1,0 +1,16 @@
+{
+  "name": "phantomscope-free-backend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node --watch server.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
